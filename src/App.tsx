@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Screen from './components/Screen'
-import ButtonBox from './components/ButtonBox'
+import Screen from './components/ui/Screen'
+import ButtonBox from './components/layout/ButtonBox'
 import * as math from 'mathjs'
 
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
           } else {
             setDisplay(String(result))
           }
-        } catch (e) {
+        } catch {
           setDisplay('Error')
         }
         break

@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import App from './App'
+import App from '../../App'
 import { describe, it, expect } from 'vitest'
 
 describe('Calculator App', () => {
@@ -65,4 +65,3 @@ describe('Calculator App', () => {
     expect(screen.getByText('9')).toBeInTheDocument()
   })
 })
-

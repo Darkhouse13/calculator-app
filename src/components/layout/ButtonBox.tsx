@@ -1,4 +1,4 @@
-import Button from './Button'
+import Button from '../../components/ui/Button'
 
 interface ButtonBoxProps {
   onButtonClick: (value: string) => void
@@ -28,4 +28,3 @@ const ButtonBox = ({ onButtonClick }: ButtonBoxProps) => {
 }
 
 export default ButtonBox
-

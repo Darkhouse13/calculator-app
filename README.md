@@ -13,6 +13,43 @@ This is a fully functional calculator application built with React, TypeScript, 
 
 ## Project Structure
 
+```
+calculator/
+├── .gitignore
+├── README.md
+├── GITHUB_INSTRUCTIONS.md
+├── DEPLOYMENT_INSTRUCTIONS.md
+├── PROJECT_SUMMARY.md
+├── package.json
+├── vite.config.ts
+├── vitest.config.ts
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── index.html
+├── src/
+│   ├── main.tsx
+│   ├── App.tsx
+│   ├── vite-env.d.ts
+│   ├── styles/
+│   │   ├── index.css
+│   │   └── App.css
+│   ├── assets/
+│   │   ├── vite.svg
+│   │   └── react.svg
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── Screen.tsx
+│   │   │   └── Button.tsx
+│   │   └── layout/
+│   │       └── ButtonBox.tsx
+│   ├── __tests__/
+│   │   ├── components/
+│   │   │   └── App.test.tsx
+│   │   └── utils/
+│   └── setupTests.ts
+```
+
 This project was built with:
 - React for the UI components
 - TypeScript for type safety
