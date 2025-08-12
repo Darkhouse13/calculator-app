@@ -1,0 +1,78 @@
+:root {
+  --bg-color: #28313b;
+  --wrapper-bg: #485461;
+  --screen-bg: rgba(67, 87, 105, 0.176);
+  --button-bg: #e0e0e0;
+  --operator-bg: #f39c12;
+  --operator-text: white;
+  --text-color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.wrapper {
+  width: 340px;
+  height: 540px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--wrapper-bg);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.screen {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  background-color: var(--screen-bg);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--text-color);
+  font-weight: bold;
+  box-sizing: border-box;
+  font-size: 2.5rem;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.buttonBox {
+  width: 100%;
+  height: calc(100% - 110px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.button {
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #dcdcdc;
+}
+
+.operator {
+  background-color: var(--operator-bg);
+  color: var(--operator-text);
+}
+
+.operator:hover {
+  background-color: #e68a00;
+}
